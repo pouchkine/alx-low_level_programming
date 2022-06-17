@@ -1,2 +1,1 @@
-# alx-low_level_programming
-it's a test
+#this is a project for more functions
