@@ -1,14 +1,19 @@
-#include "main.h"
+#include "holberton.h"
 
 /**
- * _isalpha - thisprogram checks if a given character is alphabetic
- * @c: this is the character passed in parameter
- * Return: int
+ * _isalpha - Entry point
+ * @c: the integer value it receives
+ * Description: checks if alphabet
+ * Return: 1 if true. 0 if false
  */
 
 int _isalpha(int c)
 {
-	if (c >= 65 && c <= 122)
+	if (c >= 'a' && c <= 'z')
+	{
+	return (1);
+	}
+	else if (c >= 'A' && c <= 'Z')
 	{
 		return (1);
 	}

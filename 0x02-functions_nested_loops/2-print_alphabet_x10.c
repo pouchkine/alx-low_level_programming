@@ -1,25 +1,24 @@
-#include "main.h"
+#include "holberton.h"
 
 /**
- * print_alphabet_x10 - prints the alphabet 10 times
- * You can only use putchar twice
- * Return - nothing
+ * print_alphabet_x10 - Make alphabet x10 times
+ *
+ * Return: void
  */
-
 void print_alphabet_x10(void)
 {
-	int l;
+	char c;
 	int i = 0;
 
-	while (i < 10)
+	while (i <= 9)
 	{
-		l = 'a';
-		while (l <= 'z')
+		for (c = 'a'; c <= 'z'; c++)
 		{
-			_putchar(l);
-			l += 1;
+			_putchar(c);
 		}
-		_putchar(10);
-		i += 1;
+
+		_putchar('\n');
+
+		i++;
 	}
 }
